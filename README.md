@@ -55,37 +55,63 @@ Here are the commands you can use to interact with the robot:
 * MOVE: Move the robot one step forward in the direction it is facing..<br/>
 * LEFT: Turn the robot 90 degrees to the left..<br/>
 * RIGHT: Turn the robot 90 degrees to the right..<br/>
-* REPORT: Display the robot’s current position and direction.
+* REPORT: Display the robot’s current position and direction.<br/>
 
-## Examples
-Place the robot at position (0,0) facing SOUTH:
-
+## Running the Application
+To run the application, execute the script:
 ```sh
-PLACE 0,0,SOUTH
+./ToyRobot.py
 ```
 
-Move the robot forward:
+You will be prompted to enter commands in the terminal.
 
-```sh
-MOVE
-```
+## Input/Output Sample
+Here’s how the application handles commands:
 
-Turn the robot left:
+* Place the robot at position (0,0) facing SOUTH:<br/>
+Enter your command: PLACE 0,0,SOUTH<br/>
 
-```sh
-LEFT
-```
+* Report the robot’s current position: <br/>
+Enter your command: REPORT <br/>
+Toys' current position: 0,0,SOUTH <br/>
 
-Report the robot’s position:
+* Move the robot forward: <br/>
+Enter your command: MOVE <br/>
+Position is not valid<br/>
 
-```sh
-REPORT
-```
+* Turn the robot left: <br/>
+Enter your command: LEFT <br/>
+ 
+* Report the robot’s position:<br/>
+Enter your command: REPORT
+Toy's current position: 0,0,EAST
 
+* Move the robot forward: <br/>
+Enter your command: MOVE <br/>
+
+* Report the robot’s position:<br/>
+Enter your command: REPORT<br/>
+Toy's current position: 1,0,EAST
+
+* Report the robot’s position:<br/>
+Enter your command: REPORT<br/>
+Toy's current position: 1,0,EAST
+
+<br/>Enter your command: MOVE
+<br/>Enter your command: MOVE
+<br/>Enter your command: RIGHT
+<br/>Enter your command: REPORT
+<br/>Toy's current position: 3,0,SOUTH
+<br/>Enter your command: LEFT
+<br/>Enter your command: LEFT
+<br/>Enter your command: MOVE
+<br/>Enter your command: REPORT
+<br/>Toy's current position: 3,1,NORTH
 
 ## Error Handling
 * Invalid Position: If a move command results in the robot going out of bounds, an error message will be displayed. <br/>
 * Invalid Command: Commands that are not recognized will trigger an error message.
 
-## Contributing
-If you want to contribute to the development of this project, please fork the repository and submit a pull request with your changes.
+## Important Notes
+* Commands are case sensitive: Ensure you use the exact casing as specified (e.g., PLACE, not place).
+* Space handling: Commands must not include extra spaces; only a single space is allowed between the command and its arguments.
