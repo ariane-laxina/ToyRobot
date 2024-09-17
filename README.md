@@ -13,7 +13,7 @@ Report the robot’s current position and direction.
 Python 3.x
 
 ## Setup
-1. Clone the Repository
+1. Clone the Repository<br/>
 Clone this repository to your local machine using Git:
 ```sh
 git clone https://github.com/yourusername/ToyRobot.git
@@ -21,13 +21,13 @@ git clone https://github.com/yourusername/ToyRobot.git
 
 Replace https://github.com/yourusername/ToyRobot.git with the actual URL of your repository.
 
-2. Navigate to the Project Directory
+2. Navigate to the Project Directory<br/>
 Change to the project directory:
 ```sh
 cd ToyRobot
  ```
 
-3. Set Up a Virtual Environment (Optional but recommended)
+3. Set Up a Virtual Environment (Optional but recommended)<br/>
 Create and activate a virtual environment to manage dependencies:
 
 ```sh
